@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int i , j, n, m, num=0, arr[10][10];
+    int i , j, n, m, num=0, arr[100][100];
 
     scanf("%d %d", &n,&m); //입력받기
 
