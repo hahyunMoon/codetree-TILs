@@ -12,7 +12,7 @@ int main() {
                 else arr[i][j]= arr[i][j-1] + num++;
             }
             else if(j==m-1 && i>0){
-                arr[i][j] = arr[i-1][j] + num--;
+                arr[i][j] = arr[i-1][j] + --num;
             }
             else{
                 arr[i][j] = arr[i-1][j+1] +1;
