@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &n); //입력받기
 
     for(i =n-1;i>=0;i--){
-        if(i %2 == 0){
+        if((n-i) %2 == 0){
             for(j=0;j<n;j++) arr[j][i] = num++;
         }
         else for(j=n-1;j>=0;j--) arr[j][i] = num++;
