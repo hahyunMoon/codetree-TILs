@@ -6,9 +6,14 @@ int main() {
     scanf("%d", &num);
 
     for(i=0;i<num;i++){
-        for(j=0;j<num;j++){
-            if(i == 0 || j == 0) arr[i][j] = 1;
-            else arr[i][j] = arr[i-1][j] + arr[i][j-1] + arr[i=1][j-1];
+        for(j=0; j<num;j++){
+            arr[i][j] = 1;
+        }
+    }
+
+    for(i=1;i<num;i++){
+        for(j=1; j<num;j++){
+            arr[i][j] = arr[i-1][j-1] + arr[i-1][j] + arr[i][j-1];
         }
     }
 
